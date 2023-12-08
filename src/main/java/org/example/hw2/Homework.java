@@ -4,8 +4,6 @@ import org.example.hw2.annotation.*;
 
 import java.lang.reflect.Constructor;
 import java.lang.reflect.InvocationTargetException;
-import java.time.LocalDateTime;
-
 import static org.example.hw2.MyAssertBoolean.*;
 
 public class Homework {
@@ -70,14 +68,14 @@ class MyClassTest {
         }
     }
 
-    @BeforeEach
-    void beforeEach() {
-        System.out.println("Запущен метод с аннотацией BeforeEach");
-    }
-
     @AfterEach
     void afterEach() {
         System.out.println("Запущен метод с аннотацией AfterEach");
+    }
+
+    @BeforeEach
+    void beforeEach() {
+        System.out.println("Запущен метод с аннотацией BeforeEach");
     }
 
 
